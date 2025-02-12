@@ -175,7 +175,7 @@ To improve query performance, we carried out the following optimization process:
         - Execution time (E.T.): **85.054**
         - Planning time (P.T.): **0.985ms**
     - Below is the **screenshot** of the `EXPLAIN` result before optimization:
-      ![EXPLAIN Before Index](spotify_explain_before_index.png)
+      ![EXPLAIN Before Index](Dataoutput_before_index.png)
 
 - **Index Creation on the `artist` Column**
     - To optimize the query performance, we created an index on the `artist` column. This ensures faster retrieval of rows where the artist is queried.
@@ -189,15 +189,15 @@ To improve query performance, we carried out the following optimization process:
         - Execution time (E.T.): **121.1942 ms**
         - Planning time (P.T.): **0.166 ms**
     - Below is the **screenshot** of the `EXPLAIN` result after index creation:
-      ![EXPLAIN After Index](spotify_explain_after_index.png)
+      ![EXPLAIN After Index](Dataoutput_after_index.png)
 
 - **Graphical Performance Comparison**
     - A graph illustrating the comparison between the initial query execution time and the optimized query execution time after index creation.
     - **Graph view** shows the significant drop in both execution and planning times:
-      ![Performance Graph](Graphical_representation_before_index.png)
-      ![Performance Graph](graphical_representation_after_index.png)
-      ![Performance Graph](Analysis_ofquery_before_index.png)
-      ![Performance Graph](Analysis_ofquery_after_index.png)
+      ![Performance Graph](graphical_representation_before_index.png)
+      ![Performance Graph](Graphical_representation_after_index.png)
+      ![Performance Graph](Analysis_of_query_before_index.png)
+      ![Performance Graph](Analysis_of_query_after_index.png)
 
 This optimization shows how indexing can drastically reduce query time, improving the overall performance of our database operations in the Spotify project.
 ---
